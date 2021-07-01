@@ -1,4 +1,2 @@
-# Base layout template with Gulp, SCSS and Stylelint
-1. Create a repo using this template
-1. Replace `<your_account>` and `<repo_name>` with your Github username and the new repo name
-    - [DEMO LINK](https://<your_account>.github.io/<repo_name>/)
+[FIGMA DESIGN](https://www.figma.com/file/KkVQY8SS0p1DZPmGCb8deQ/OnlineDivorcio-v2?node-id=1%3A70)
+    [DEMO LINK](https://Dima-Batiuk.github.io/layout_onlineDivorcio/)
