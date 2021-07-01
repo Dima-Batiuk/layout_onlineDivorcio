@@ -1,0 +1,275 @@
+._container {
+  max-width: $maxWidthContainer + px;
+  padding: 15px 20px;
+  margin: 0 auto;
+
+  @media (min-width: 1920px) {
+    max-width: $maxWidthContainerHD + px;
+
+  }
+}
+
+.header {
+  z-index: 2;
+  box-sizing: border-box;
+  background-color: white;
+  height: 100%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  &__main {
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    &--burger {
+      display: none;
+      width: 20px;
+      height: 20px;
+      @media (max-width: 992px) {
+        display: block;
+      }
+    }
+  }
+}
+
+.logo {
+  z-index: 5;
+  width: 147px;
+  height: 46px;
+  @media (max-width: 350px) {
+    width: 100px;
+    height: 37px;
+  }
+
+  @media (min-width: 350px) {
+    width: 118px;
+    height: 37px;
+  }
+
+  @media (min-width: 1920px) {
+    width: 200px;
+    height: 60px;
+  }
+}
+
+.nav {
+  z-index: 3;
+  @media(max-width: 992px) {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(317.76deg,
+    #ffa600 40.02%,
+    #ff7800 68.68%,
+    #ff6d00 83.15%
+  );
+
+    visibility: hidden;
+    transition: all 0.3s ease;
+
+    &.active {
+      padding: 64px 0 0;
+      left: 0;
+      visibility: inherit;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    @media(max-width: 992px) {
+      height: 90%;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
+
+  &__item {
+    font-family: exo, sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    padding: 15px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease;
+    &:hover {
+      color: #cc2229;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 15px;
+      font-weight: 600;
+      line-height: 20px;
+      color: #595e6d;
+    }
+
+    @media(max-width: 992px) {
+      font-size: 25px;
+      font-weight: 600;
+      line-height: 35px;
+      color: #595e6d;
+    }
+
+    @media(min-width: 1920px) {
+      font-size: 20px;
+      line-height: 35px;
+    }
+
+  }
+}
+
+.bold-link {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: white;
+
+  &:hover {
+    color: white;
+  }
+}
+
+.nav-button {
+  width: 116px;
+  height: 37px;
+  @extend %flexCenter;
+  background-color: #cc2229;
+  border-radius: 5px;
+  padding: 0;
+  transition: box-shadow 0.3s ease;
+
+  &:hover {
+    box-shadow: 1px 1px 4px 3px rgba(135, 18, 18, 0.2);
+  }
+
+  @media (max-width: 992px) {
+    display: none;
+  }
+
+  @media(min-width: 1920px) {
+    width: 185px;
+    height: 40px ;
+
+  }
+}
+
+.text-decoration {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.burger {
+  z-index: 5;
+  display: none;
+  @media (max-width: 992px) {
+    display: block;
+
+  }
+  position: relative;
+  width: 20px;
+  height: 20px;
+
+  &__icon {
+    position: absolute;
+    background-color: #727786;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+    border-radius: 5px;
+    transition: transform 0.5s ease;
+  }
+
+  &:before,
+  &:after {
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    border-radius: 5px;
+    transition: transform 0.5s ease;
+  }
+
+  &:before {
+    background-color: #8c91a0;
+    top: 0;
+  }
+
+  &:after {
+    background-color: #595e6d;
+    bottom: 1px;
+  }
+
+  &.active:before {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+
+  &.active:after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+
+  &.active &__icon {
+    transform: scale(0);
+  }
+}
+
+.get-started {
+  display: none;
+  z-index: 5;
+
+  @media (max-width: 992px) {
+    display: block;
+  }
+
+  &__link {
+
+    @extend %flexCenter;
+    width: 90px;
+    height: 30px;
+    background: linear-gradient(
+      179.04deg,
+      #cc2229 -29.81%,
+      #9f041b 129.89%
+    );
+    border-radius: 5px;
+    text-decoration: none;
+    transition: box-shadow 0.3s ease;
+
+    &--text {
+      font-family: exo, sans-serif;
+      font-size: 10px;
+      font-weight: 700;
+      line-height: 13.3px;
+      color: white;
+
+    }
+
+    &:hover {
+      box-shadow: 1px 1px 4px 3px rgba(135, 18, 18, 0.2);
+    }
+  }
+}

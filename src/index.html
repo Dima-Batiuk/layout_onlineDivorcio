@@ -4,10 +4,464 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    >
     <link rel="stylesheet" href="./styles/main.scss">
   </head>
   <body>
-    <h1>Hello Mate Academy</h1>
+    <header class="header">
+      <div class="header__wrapper _container">
+        <div class="header__main">
+          <div class="header__main--burger">
+            <div class="burger">
+              <span class="burger__icon"></span>
+            </div>
+          </div>
+          <div class="header__main--logo">
+            <img
+              src="images/svg/logo-color.svg"
+              alt="logo"
+              class="logo"
+            >
+          </div>
+        </div>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="" class="nav__link">
+                Cómo funciona
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link">
+                ¿Por Qué Nosotros?
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link">
+                Comentarios
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link">
+                FAQ
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link">
+                Contáctenos
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link nav-button">
+                <span class="bold-link">Empezar</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link text-decoration">
+                Iniciar Sesión
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="get-started">
+          <a href="" class="get-started__link">
+            <span class="get-started__link--text">Get started</span>
+          </a>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="main__wrapper _container">
+        <div class="row benefits">
+          <div class="col-md-8">
+            <h1 class="benefits__title">
+              Comience Su Divorcio Online Sin Honorarios de Abogados
+            </h1>
+          </div>
+          <div class="col-md-7 benefits__picture">
+            <img
+              src="images/svg/main-portret.svg"
+              alt=""
+              class="main__pictures--portret"
+            >
+            <img
+              src="images/svg/portre_background.svg"
+              alt=""
+              class="main__pictures--background"
+            >
+          </div>
+        </div>
+      </div>
+      <div class="main__content">
+        <div class="row points _container">
+          <div class="col-md-4 points__shedle">
+            <div class="point">
+              <img
+                src="images/svg/flag.svg"
+                alt=""
+                class="point__flag"
+              >
+              <p class="point__text">
+                Comience su divorcio en línea
+                Sin honorarios de abogado
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row points _container">
+          <div class="col-md-5 points__shedle">
+            <div class="point">
+              <img
+                src="images/svg/flag.svg"
+                alt=""
+                class="point__flag"
+              >
+              <p class="point__text">
+                Nuestro sistema fue pionero en
+                <br>
+                la industria del divorcio en línea
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row points _container">
+          <div class="col-md-5 points__shedle">
+            <div class="point">
+              <img
+                src="images/svg/flag.svg"
+                alt=""
+                class="point__flag"
+              >
+              <p class="point__text">
+                Durante 19 años, más de 500,000
+                <br>
+                personas han usado nuestras herramientas
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row points _container">
+          <div class="col-md-4 points__shedle">
+            <div class="point">
+              <img
+                src="images/svg/flag.svg"
+                alt=""
+                class="point__flag"
+              >
+              <p class="point__text">
+                Ofrecemos el mejor precio del mercado.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <form
+        action=""
+        method="post"
+        class="main__form"
+      >
+        <div class="form">
+          <div class="form__header">
+            <div class="title">
+              <h2 class="title__text">Vea si califica</h2>
+            </div>
+            <div class="tape">
+              <div class="advertisement">
+                <div class="advertisement__percent">
+                  <p class="advertisement__percent--number">100%</p>
+                </div>
+                <div class="advertisement__name">
+                  <p class="advertisement__name--text">
+                    DE GARANTÍA DE APROBACIÓN EN
+                    <br>
+                    EL TRIBUNAL
+                    <span class="advertisement__name--text-annex">
+                      o le devolvemos su dinero
+                    </span>
+                  </p>
+                </div>
+              </div>
+              <div class="price">
+                <p class="price__number">$139</p>
+                <p class="price__text">BEST PRICE</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="form__body"></div>
+        </div>
+      </form>
+
+    </main>
+
+    <footer class="footer">
+      <div class="header__wrapper _container footer__wrapper">
+        <div class="footer__main">
+          <div class="header__main--logo logo-white">
+            <img
+              src="images/svg/logo-white.svg"
+              alt="logo-white"
+              class="logo-white"
+            >
+          </div>
+        </div>
+        <nav class="nav footer-nav">
+          <ul class="nav__list footer-nav__item">
+            <li class="nav__item footer-nav__item">
+              <a href="" class="nav__link footer-nav__link">
+                Cómo funciona
+              </a>
+            </li>
+            <li class="nav__item footer-nav__item">
+              <a href="" class="nav__link footer-nav__link">
+                ¿Por Qué Nosotros?
+              </a>
+            </li>
+            <li class="nav__item footer-nav__item">
+              <a href="" class="nav__link footer-nav__link">
+                Comentarios
+              </a>
+            </li>
+            <li class="nav__item footer-nav__item">
+              <a href="" class="nav__link footer-nav__link">
+                FAQ
+              </a>
+            </li>
+            <li class="nav__item footer-nav__item">
+              <a href="" class="nav__link footer-nav__link">
+                Contáctenos
+              </a>
+            </li>
+            <li class="nav__item footer-nav__item">
+              <a href="" class="nav__link nav-button footer-nav__link">
+                <span class="bold-link">Empezar</span>
+              </a>
+            </li>
+            <li class="nav__item footer-nav__item">
+              <a href="" class="nav__link text-decoration footer-nav__link">
+                Iniciar Sesión
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__info _container">
+        <div class="address">
+          <p class="address__description">
+            Document Processing Center Address:
+            <a
+            href=""
+            target="_blank"
+            rel="noopener"
+            class="address__description--link"
+            >
+              Online Divorce Technology LLC
+              416 W San Ysidro BLVD, Ste L PMB #630,
+              San Ysidro CA 92173
+            </a>
+          </p>
+        </div>
+        <div class="details">
+          <a href="tel:+18669271400" class="details__phone">1 (866) 927-1400</a>
+          <p class="details__rota">Mon-Fri, 9:00AM - 8:00PM EST</p>
+        </div>
+      </div>
+      <div class="footer__divorce _container">
+        <div class="divorces">
+          <a href="" class="divorces__link">
+            Divorce in Alabama
+          </a>
+          <a href="" class="divorces__link">
+            Divorce in Alaska
+          </a>
+          <a href="" class="divorces__link">
+            Divorce in Arizona
+          </a>
+          <a href="" class="divorces__link">
+            Divorce in Arkansas
+          </a>
+          <a href="" class="divorces__link">
+            Divorce in California
+          </a>
+          <a href="" class="divorces__link">
+            Divorce in Colorado
+          </a>
+          <a href="" class="divorces__link">
+            Divorce in Connecticut
+          </a>
+          <a href="" class="divorces__link">
+            Divorce in Delaware
+          </a>
+          <a href="" class="divorces__link">
+            Divorce in Florida
+          </a>
+          <a href="" class="divorces__link">
+            Divorce in Georgia
+          </a>
+          <a href="" class="divorces__link">
+            Divorce in Hawaii
+          </a>
+          <a href="" class="divorces__link">
+            Divorce in Idaho
+          </a>
+          <a href="" class="divorces__link">
+            Divorce in Illinois
+          </a>
+          <a href="" class="divorces__link">
+            Divorce in Indiana
+          </a>
+          <a href="" class="divorces__link">
+            Divorce in Iowa
+          </a>
+          <a href="" class="divorces__link">
+            Divorce in Kansas
+          </a>
+          <a href="" class="divorces__link">
+            Divorce in Kentucky
+          </a>
+          <a href="" class="divorces__link">
+            Divorce in Louisiana
+          </a>
+          <a href="" class="divorces__link">
+            Divorce in Maine
+          </a>
+          <a href="" class="divorces__link">
+            Divorce in Maryland
+          </a>
+          <a href="" class="divorces__link">
+            Divorce in Massachusetts
+          </a>
+          <a href="" class="divorces__link">
+            Divorce in Michigan
+          </a>
+          <a href="" class="divorces__link">
+            Divorce in Minnesota
+          </a>
+          <a href="" class="divorces__link">
+            Divorce in Mississippi
+          </a>
+          <a href="" class="divorces__link">
+            Divorce in Missouri
+          </a>
+          <a href="" class="divorces__link">
+            Divorce in Montana
+          </a>
+          <a href="" class="divorces__link">
+            Divorce in Nebraska
+          </a>
+          <a href="" class="divorces__link">
+            Divorce in Nevada
+          </a>
+          <a href="" class="divorces__link">
+            Divorce in New Hampshire
+          </a>
+          <a href="" class="divorces__link">
+            Divorce in New Jersey
+          </a>
+          <a href="" class="divorces__link">
+            Divorce in New Mexico
+          </a>
+          <a href="" class="divorces__link">
+            Divorce in New York
+          </a>
+          <a href="" class="divorces__link">
+            Divorce in North Carolina
+          </a>
+          <a href="" class="divorces__link">
+            Divorce in North Dakota
+          </a>
+          <a href="" class="divorces__link">
+            Divorce in Ohio
+          </a>
+          <a href="" class="divorces__link">
+            Divorce in Oklahoma
+          </a>
+          <a href="" class="divorces__link">
+            Divorce in Oregon
+          </a>
+          <a href="" class="divorces__link">
+            Divorce in Pennsylvania
+          </a>
+          <a href="" class="divorces__link">
+            Divorce in Puerto Rico
+          </a>
+          <a href="" class="divorces__link">
+            Divorce in Rhode Island
+          </a>
+          <a href="" class="divorces__link">
+            Divorce in South Carolina
+          </a>
+          <a href="" class="divorces__link">
+            Divorce in South Dakota
+          </a>
+          <a href="" class="divorces__link">
+            Divorce in Tennessee
+          </a>
+          <a href="" class="divorces__link">
+            Divorce in Texas
+          </a>
+          <a href="" class="divorces__link">
+            Divorce in Utah
+          </a>
+          <a href="" class="divorces__link">
+            Divorce in Vermont
+          </a>
+          <a href="" class="divorces__link">
+            Divorce in Virginia
+          </a>
+          <a href="" class="divorces__link">
+            Divorce in Washington
+          </a>
+          <a href="" class="divorces__link">
+            Divorce in Washington D.C.
+          </a>
+          <a href="" class="divorces__link">
+            Divorce in West Virginia
+          </a>
+          <a href="" class="divorces__link">
+            Divorce in Wisconsin
+          </a>
+          <a href="" class="divorces__link">
+            Divorce in Wyoming
+          </a>
+        </div>
+      </div>
+      <section class="footer__copyright _container">
+        <p class="footer__copyright--mapa">
+          Mapa del sitio
+        </p>
+        <p class="footer__copyright--copy">
+          © 2000-2019 Online Divorcio, Todos los derechos reservados
+        </p>
+        <p class="footer__copyright--paragraph">
+          Aviso legal: Divorcio en línea no es un bufete de abogados
+          y su sservicios de la página web y los formularios
+          no sustituyen el asesoramiento de un abogado. Divorcio en
+          línea proporciona acceso a servicios de autoayuda asistidos
+          por computadora en su dirección específica. La página web
+          del Divorcio en línea y las instrucciones escritas brindan
+          información general sobre el proceso de divorcio solamente;
+          No podemos darle ningún consejo específico, opiniones o
+          recomendaciones sobre su selección o relleno de formularios
+          o sus derechos, recursos u opciones legales particulares.
+          OnlineDivorce.com es un sitio web que proporciona acceso a
+          cuestionarios en línea autoguiados. El Divorcio en línea no
+          vende formularios en blanco, y un usuario puede descargarlos
+          en el sitio web de un tribunal. Las comunicaciones entre Usted
+          y Divorcio en línea se rigen por nuestra Política de privacidad,
+          pero no están cubiertas por los privilegios de abogado-cliente
+          o producto de trabajo. Su acceso al sitio web de Divorcio en
+          línea está sujeto y regido por nuestros Términos de uso.
+          Cualquier compra de Divorcio en línea está sujeta y regida por
+          nuestros Términos y condiciones.
+        </p>
+      </section>
+    </footer>
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 </html>
