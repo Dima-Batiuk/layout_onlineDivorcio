@@ -1,0 +1,118 @@
+.main__instructions {
+  margin-bottom: 100px;
+  @media(max-width: 624px) {
+    margin-bottom: 20px;
+  }
+}
+
+.instructions {
+  &__title {
+    text-align: center;
+    font-family: Exo, sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0.5px;
+    color: #f70;
+    margin-bottom: 55px;
+
+    @media(max-width: 624px) {
+      margin-bottom: 38px;
+    }
+  }
+
+  &__points {
+    max-width: $formMaxWidth + px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    @media(max-width: 624px) {
+      flex-direction: column;
+    }
+    &--arrow {
+      font-size: 30px;
+
+      @media(max-width: 624px) {
+        transform: rotate(90deg);
+      }
+    }
+  }
+}
+
+.step {
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 11px;
+  &__icon {
+    width: 78px;
+    height: 78px;
+    border-radius: 50%;
+    position: relative;
+    &--image {
+      position: absolute;
+      top: 6px;
+      right: 0;
+    }
+  }
+
+  &__text {
+    font-family: Exo, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.7px;
+    text-align: center;
+
+  }
+
+}
+
+.first-icon {
+  background-color: #eee;
+}
+
+.second-icon {
+  background-color: #dbdbdb;
+}
+
+.third-icon {
+  background-color: #ffebb2;
+}
+
+.forth-icon {
+  background-color: #fed5a1;
+}
+
+.first-arrows {
+  color: #575c6ba2;
+}
+
+.second-arrows {
+  color: #ffc300;
+}
+
+.third-arrows {
+  color: #ff7300;
+}
+
+.first-text {
+  color: #b7b4b4;
+}
+
+.second-text {
+  color: #575c6b;
+}
+
+.third-text {
+  color: #ffc300;
+}
+
+.forth-text {
+  color: #ff7300;
+
+}

@@ -4,59 +4,67 @@
   background-color: #fafafa;
   position: relative;
 
-  //&__pictures {
-  //
-  //}
-  //
-  //&__content {
-  //
-  //}
+  &__wrapper {
+    display: flex;
+  }
 
-  &__form {
-    max-width: $formMaxWidth + px;
-    margin: 0 auto;
-    z-index: 4;
+  &__content {
+    flex: 0 0 100%;
+
   }
 }
 
 .benefits {
+  flex: 0 0 100%;
+  &__body {
+    width: 65%;
+    @media(max-width: 992px) {
+      width: 60%;
+    }
 
-  &__picture {
-    position: static;
+    @media(max-width: 768px) {
+      width: 55%;
+    }
+  }
+
+  &__content {
+    margin-bottom: 40px;
   }
 
   &__title {
-    margin-top: 84px;
+    margin: 0;
+    height: 100%;
     font-family: Exo, sans-serif;
     font-size: 54px;
     font-weight: 700;
     line-height: 72px;
     letter-spacing: 0.8px;
-    text-align: left;
     padding-left: 0;
+    @media(max-width: 992px) {
+      font-size: 39px;
+      line-height: 54px;
+      margin-top: 62px;
+    }
+    @media(max-width: 768px) {
+      font-size: 24px;
+      line-height: 32px;
+    }
   }
 
 }
 
-.main__pictures--portret {
-  position: absolute;
-  top: 0;
-  right: 0;
-  max-width: 100%;
-  max-height: 100%;
-  z-index: 1;
-}
-
-.main__pictures--background {
-  z-index: 0;
-  position: absolute;
-  top: 0;
-  right: 0;
-  max-width: 100%;
-  max-height: 100%;
-}
-
 .points {
+  width: 65%;
+  @media(max-width: 992px) {
+    width: 60%;
+  }
+
+  @media(max-width: 768px) {
+    width: 55%;
+  }
+  @media (max-width: 510px) {
+    width: 100%;
+  }
 
   &__shedle {
     padding-left: 0;
@@ -67,10 +75,6 @@
   display: flex;
   align-items: flex-start;
   gap: 40px;
-
-  //&__flag {
-  //
-  //}
 
   &__text {
     font-family: Exo, sans-serif;
@@ -83,132 +87,36 @@
   }
 }
 
-.form {
-  z-index: 4;
+.pictures {
+  z-index: -1;
+  flex: 0 0 35%;
+  transform: translateX(-100%);
+  position: relative;
 
-  &__header {
-    z-index: 4;
+  @media(max-width: 992px) {
+    flex: 0 0 40%;
+  }
+
+  @media(max-width: 768px) {
+    flex: 0 0 44%;
+  }
+
+  &__image {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
     width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    max-height: 912px;
+    object-fit: cover;
   }
 
-  //&__body {
-  //
-  //}
-}
-
-.title {
-  @extend %flexCenter;
-  width: 214px;
-  height: 71px;
-  background-color: #ff6d00;
-  border-radius: 10px;
-
-  &__text {
-    font-family: Exo, sans-serif;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 29px;
-    letter-spacing: 0.8px;
-    color: white;
-  }
-}
-
-.tape {
-  display: flex;
-  justify-content: flex-start;
-}
-
-.advertisement {
-  background-image: url("../images/svg/Fill1.svg");
-  background-repeat: no-repeat;
-  width: 536px;
-  height: 80px;
-  background-position: center;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-
-  &__percent {
-    @extend %flexCenter;
-    padding: 0 16px;
-    &--number {
-      position: relative;
-      margin: 0;
-      font-family: Exo, sans-serif;
-      font-size: 43px;
-      font-weight: 400;
-      line-height: 57px;
-      color: white;
-
-      &:after {
-        content: "";
-        position: absolute;
-        border-left: 2px solid white;
-        height: 45px;
-        right: -5px;
-        top: 50%;
-        transform: translateY(-50%);
-      }
-    }
-  }
-
-  &__name {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    &--text {
-      font-family: Exo, sans-serif;
-      font-size: 18px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 24px;
-      letter-spacing: 0.1px;
-      color: white;
-      margin: 0;
-      &-annex {
-        font-family: Exo, sans-serif;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 24px;
-        letter-spacing: 0.1px;
-        color: white;
-      }
-    }
-  }
-}
-
-.price {
-  z-index: 10;
-  background-image: url("../images/svg/Clip2.svg");
-  background-repeat: no-repeat;
-  //background-size: contain;
-  width: 154px;
-  height: 80px;
-  background-position: center;
-  @extend %flexCenter;
-  flex-direction: column;
-
-  &__number {
-    padding-left: 33px;
-    font-family: exo, sans-serif;
-    font-size: 33px;
-    line-height: 33px;
-    font-weight: 400;
-    margin: 0;
-    color: white;
-  }
-
-  &__text {
-    padding-left: 33px;
-    font-family: exo, sans-serif;
-    font-size: 12px;
-    color: white;
-    margin: 0;
+  &__background {
+    z-index: 0;
+    max-width: 875px;
+    max-height: 775px;
+    position: absolute;
+    left: -44%;
+    bottom: -40%;
   }
 }

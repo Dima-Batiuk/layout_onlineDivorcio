@@ -86,7 +86,10 @@
       font-weight: 400;
       color: white;
       text-decoration: none;
-
+      transition: color 0.3s ease;
+      &:hover {
+        color: #e20106;
+      }
     }
   }
 }
@@ -99,6 +102,10 @@
     font-weight: 600;
     color: white;
     text-decoration: none;
+    transition: color 0.3s ease;
+    &:hover {
+      color: #e20106;
+    }
   }
 
   &__rota {
@@ -122,6 +129,10 @@
     line-height: 17.3px;
     text-decoration: none;
     color: white;
+    transition: color 0.3s ease;
+    &:hover {
+      color: #e20106;
+    }
   }
 }
 

@@ -81,6 +81,8 @@
       padding: 64px 0 0;
       left: 0;
       visibility: inherit;
+      overflow: hidden;
+      justify-content: center;
     }
   }
 
@@ -271,5 +273,11 @@
     &:hover {
       box-shadow: 1px 1px 4px 3px rgba(135, 18, 18, 0.2);
     }
+  }
+}
+
+.invisible {
+  @media (max-width: 992px) {
+    display: none;
   }
 }
